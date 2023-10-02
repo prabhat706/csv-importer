@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV to Google Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>CSV to Google Sheet</h1>
+    <form id="uploadForm">
+        <input type="file" class="custom-file-upload" id="csvFile" accept=".csv" required>
+        <div id="wrap">
+            <label for="selectedColumns">Select Columns:</label>
+            <div id="selectedColumns">
+                <!-- Populated dynamically using JavaScript -->
+            </div>
+        </div>
+        <label for="deselectRows">Deselect Rows:</label>
+        <input type="text" id="deselectRows" placeholder="Enter line numbers to deselect (comma-separated)">
+        <label for="sheetId">Google Sheet Id:</label>
+        <input type="text" name="sheetId" id="sheetId" required>
+        <button type="button" id="processButton" onclick="filterandprocessCSV()">Upload and Process</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

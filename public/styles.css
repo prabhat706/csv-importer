@@ -1,0 +1,140 @@
+/* Add the following CSS to your existing CSS file or create a new one */
+
+/* Improve overall layout and spacing */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the form elements */
+form {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#selectedColumns {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    height: 100px;
+    /* Set a fixed height or adjust as needed */
+}
+
+label,
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style the deselect input */
+#deselectRows {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Style the result area */
+#result {
+
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+
+#selectedColumns {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+/* Style individual checkbox items */
+#selectedColumns input[type="checkbox"] {
+    margin: 5px;
+}
+
+/* Optional: Adjust label styles for better alignment */
+#selectedColumns label {
+    margin: 5px;
+}
+
+#wrap {
+
+    display: none;
+}
+
+/* Add this to your existing CSS file or create a new one  */
+#selectedColumns input[type="checkbox"] {
+    margin: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#selectedColumns input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+}
+
+#selectedColumns label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
